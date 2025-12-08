@@ -1,4 +1,4 @@
-<img width="393" height="281" alt="image" src="https://github.com/user-attachments/assets/86e21371-10f8-47be-a2d4-f49b3f7c1500" /><img width="393" height="281" alt="image" src="https://github.com/user-attachments/assets/375da820-7c17-4f37-8c38-206b080ab4f2" /># AOD Storyteller Archetypes - Peer Work Storytelling Discovery Tool
+# AOD Storyteller Archetypes - Peer Work Storytelling Discovery Tool
 
 An interactive educational tool developed for NUAA (NSW Users and AIDS Association) that helps people discover their natural storytelling style in harm reduction and peer work contexts. Based on NUAA's SHARE & BUILD Peer Work Foundations Training.
 
