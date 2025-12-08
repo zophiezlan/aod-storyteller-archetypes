@@ -73,11 +73,17 @@ const BoundariesSection = ({ archetypeName, boundariesGuidance }: BoundariesSect
 
         <div className="space-y-4">
           {/* Red Light */}
-          <div className="bg-gradient-to-r from-red-50 to-rose-50 rounded-xl p-5 border-l-4 border-red-400">
+          <div className="bg-red-50 rounded-xl p-5 border-l-4 border-red-500">
             <div className="flex items-start gap-3 mb-3">
-              <span className="text-3xl">{trafficLightSystem.red.icon}</span>
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-3xl" role="img" aria-label="Red light - stop">{trafficLightSystem.red.icon}</span>
+                <span className="text-xs font-bold text-red-700 bg-red-100 px-2 py-1 rounded">STOP</span>
+              </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-800">{trafficLightSystem.red.name}</h4>
+                <h4 className="text-lg font-bold text-gray-800">
+                  {trafficLightSystem.red.name}
+                  <span className="sr-only"> - Do not share</span>
+                </h4>
                 <p className="text-sm text-gray-600">{trafficLightSystem.red.description}</p>
               </div>
             </div>
@@ -99,11 +105,17 @@ const BoundariesSection = ({ archetypeName, boundariesGuidance }: BoundariesSect
           </div>
 
           {/* Yellow Light */}
-          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl p-5 border-l-4 border-yellow-400">
+          <div className="bg-yellow-50 rounded-xl p-5 border-l-4 border-yellow-500">
             <div className="flex items-start gap-3 mb-3">
-              <span className="text-3xl">{trafficLightSystem.yellow.icon}</span>
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-3xl" role="img" aria-label="Yellow light - caution">{trafficLightSystem.yellow.icon}</span>
+                <span className="text-xs font-bold text-yellow-800 bg-yellow-100 px-2 py-1 rounded">CAUTION</span>
+              </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-800">{trafficLightSystem.yellow.name}</h4>
+                <h4 className="text-lg font-bold text-gray-800">
+                  {trafficLightSystem.yellow.name}
+                  <span className="sr-only"> - Proceed with caution</span>
+                </h4>
                 <p className="text-sm text-gray-600">{trafficLightSystem.yellow.description}</p>
               </div>
             </div>
@@ -125,11 +137,17 @@ const BoundariesSection = ({ archetypeName, boundariesGuidance }: BoundariesSect
           </div>
 
           {/* Green Light */}
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border-l-4 border-green-400">
+          <div className="bg-green-50 rounded-xl p-5 border-l-4 border-green-500">
             <div className="flex items-start gap-3 mb-3">
-              <span className="text-3xl">{trafficLightSystem.green.icon}</span>
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-3xl" role="img" aria-label="Green light - go">{trafficLightSystem.green.icon}</span>
+                <span className="text-xs font-bold text-green-800 bg-green-100 px-2 py-1 rounded">GO</span>
+              </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-800">{trafficLightSystem.green.name}</h4>
+                <h4 className="text-lg font-bold text-gray-800">
+                  {trafficLightSystem.green.name}
+                  <span className="sr-only"> - Safe to share</span>
+                </h4>
                 <p className="text-sm text-gray-600">{trafficLightSystem.green.description}</p>
               </div>
             </div>

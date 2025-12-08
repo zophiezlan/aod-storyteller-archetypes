@@ -17,7 +17,7 @@ const ResourcesSection = () => {
 
       {/* About NUAA */}
       <div className="mb-8">
-        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-6 border-l-4 border-teal-400">
+        <div className="bg-teal-50 rounded-xl p-6 border-l-4 border-teal-500">
           <h3 className="text-xl font-bold text-gray-800 mb-3">{nuaaInfo.title}</h3>
           <p className="text-gray-700 mb-3">{nuaaInfo.description}</p>
           <p className="text-gray-700 mb-4 font-medium">{nuaaInfo.mission}</p>
@@ -34,7 +34,7 @@ const ResourcesSection = () => {
 
       {/* SHARE & BUILD Training */}
       <div className="mb-8">
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-400">
+        <div className="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-500">
           <div className="flex items-start gap-3 mb-3">
             <GraduationCap className="text-purple-600" size={28} />
             <div>
@@ -102,7 +102,7 @@ const ResourcesSection = () => {
 
       {/* Downloadable Resources */}
       <div className="mb-8">
-        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-400">
+        <div className="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
           <div className="flex items-start gap-3 mb-4">
             <Download className="text-blue-600" size={24} />
             <div>
@@ -122,9 +122,18 @@ const ResourcesSection = () => {
                     <p className="text-xs text-gray-500 italic mb-2">
                       <strong>Use case:</strong> {resource.useCase}
                     </p>
-                    <button className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full hover:bg-blue-200 transition-colors">
-                      Download {resource.format.toUpperCase()}
-                    </button>
+                    <div className="flex items-center gap-2">
+                      <button
+                        disabled
+                        className="text-xs bg-gray-100 text-gray-400 px-3 py-1 rounded-full cursor-not-allowed"
+                        title="Template coming soon"
+                      >
+                        Download {resource.format.toUpperCase()}
+                      </button>
+                      <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">
+                        Coming Soon
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,7 +148,7 @@ const ResourcesSection = () => {
 
       {/* Your Journey: Next Steps */}
       <div className="mb-8">
-        <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 border-l-4 border-amber-400">
+        <div className="bg-amber-50 rounded-xl p-6 border-l-4 border-amber-500">
           <h3 className="text-xl font-bold text-gray-800 mb-4">{nextSteps.title}</h3>
 
           <div className="space-y-4">

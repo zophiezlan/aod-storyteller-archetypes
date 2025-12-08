@@ -21,6 +21,7 @@ const AODStorytellerQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState<Record<string, number>>({});
   const [showResults, setShowResults] = useState(false);
+  const [answerHistory, setAnswerHistory] = useState<Array<Record<string, number>>>([]);
 
   const archetypes = {
     advocate: {
@@ -517,10 +518,20 @@ const AODStorytellerQuiz = () => {
     },
   ];
 
-  const handleAnswer = (scores: any) => {
-    const newScores: any = { ...scores };
-    Object.entries(scores).forEach(([archetype, points]) => {
-      newScores[archetype] = (newScores[archetype] || 0) + (points as number);
+  const handleAnswer = (answerScores: any) => {
+    // Store this answer in history
+    const newHistory = [...answerHistory];
+    newHistory[currentQuestion] = answerScores;
+    setAnswerHistory(newHistory);
+
+    // Calculate cumulative scores
+    const newScores: any = {};
+    newHistory.forEach((historyScores) => {
+      if (historyScores) {
+        Object.entries(historyScores).forEach(([archetype, points]) => {
+          newScores[archetype] = (newScores[archetype] || 0) + (points as number);
+        });
+      }
     });
     setScores(newScores);
 
@@ -528,6 +539,12 @@ const AODStorytellerQuiz = () => {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setShowResults(true);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (currentQuestion > 0) {
+      setCurrentQuestion(currentQuestion - 1);
     }
   };
 
@@ -617,6 +634,7 @@ const AODStorytellerQuiz = () => {
                 key={index}
                 onClick={() => handleAnswer(option.scores)}
                 className="w-full text-left p-4 rounded-lg border-2 border-gray-200 hover:border-teal-500 hover:bg-teal-50 transition-all duration-200 group"
+                tabIndex={0}
               >
                 <span className="text-gray-700 group-hover:text-teal-900">
                   {option.text}
@@ -624,10 +642,23 @@ const AODStorytellerQuiz = () => {
               </button>
             ))}
           </div>
+
+          {/* Navigation buttons */}
+          {currentQuestion > 0 && (
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <button
+                onClick={handlePrevious}
+                className="text-teal-600 hover:text-teal-700 font-semibold flex items-center gap-2"
+              >
+                <span>←</span> Previous Question
+              </button>
+            </div>
+          )}
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-6">
           Choose the response that feels most natural to you
+          {currentQuestion > 0 && <span className="block mt-1">You can go back to change previous answers</span>}
         </p>
       </div>
     </div>

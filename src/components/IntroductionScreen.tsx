@@ -19,7 +19,7 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
           </p>
 
           {/* Acknowledgment of Country */}
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-4 mb-6 border-l-4 border-amber-400">
+          <div className="bg-amber-50 rounded-lg p-4 mb-6 border-l-4 border-amber-500">
             <p className="text-sm text-gray-700 italic">
               <strong>Acknowledgment of Country:</strong> NUAA acknowledges the Traditional Custodians of the land on which we work and live and pays respect to their Elders both past and present. Always was, and always will be Aboriginal land.
             </p>
@@ -46,7 +46,7 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
 
           <div className="space-y-4">
             {/* Intentional */}
-            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-5 border-l-4 border-blue-400">
+            <div className="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
               <div className="flex items-start gap-3">
                 <div className="mt-1">
                   <Target className="text-blue-600" size={24} />
@@ -66,7 +66,7 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
             </div>
 
             {/* Purposeful */}
-            <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-5 border-l-4 border-emerald-400">
+            <div className="bg-emerald-50 rounded-xl p-5 border-l-4 border-emerald-500">
               <div className="flex items-start gap-3">
                 <div className="mt-1">
                   <Lightbulb className="text-emerald-600" size={24} />
@@ -86,7 +86,7 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
             </div>
 
             {/* Meaningful */}
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border-l-4 border-purple-400">
+            <div className="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
               <div className="flex items-start gap-3">
                 <div className="mt-1">
                   <Heart className="text-purple-600" size={24} />
@@ -145,7 +145,7 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
         </div>
 
         {/* Important Notes */}
-        <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl shadow-lg p-6 mb-6 border border-yellow-200">
+        <div className="bg-yellow-50 rounded-2xl shadow-lg p-6 mb-6 border-2 border-yellow-200">
           <h3 className="text-lg font-bold text-gray-800 mb-3">
             Before You Begin
           </h3>
@@ -173,7 +173,7 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
         <div className="text-center">
           <button
             onClick={onStart}
-            className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:from-teal-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-200"
+            className="bg-teal-600 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-teal-700 transform hover:scale-105 transition-all duration-200"
           >
             Discover Your Archetype
           </button>
