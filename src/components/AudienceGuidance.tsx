@@ -60,7 +60,7 @@ const AudienceGuidance = ({ archetypeName, audienceData }: AudienceGuidanceProps
         </p>
 
         {/* Peers */}
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border-l-4 border-purple-400">
+        <div className="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
           <div className="flex items-start gap-3 mb-3">
             {audienceIcons.peers}
             <div className="flex-1">
@@ -85,7 +85,7 @@ const AudienceGuidance = ({ archetypeName, audienceData }: AudienceGuidanceProps
         </div>
 
         {/* Providers */}
-        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-5 border-l-4 border-blue-400">
+        <div className="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
           <div className="flex items-start gap-3 mb-3">
             {audienceIcons.providers}
             <div className="flex-1">
@@ -110,7 +110,7 @@ const AudienceGuidance = ({ archetypeName, audienceData }: AudienceGuidanceProps
         </div>
 
         {/* Policy Makers */}
-        <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-5 border-l-4 border-emerald-400">
+        <div className="bg-emerald-50 rounded-xl p-5 border-l-4 border-emerald-500">
           <div className="flex items-start gap-3 mb-3">
             {audienceIcons.policyMakers}
             <div className="flex-1">
@@ -135,7 +135,7 @@ const AudienceGuidance = ({ archetypeName, audienceData }: AudienceGuidanceProps
         </div>
 
         {/* General Public */}
-        <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-5 border-l-4 border-amber-400">
+        <div className="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500">
           <div className="flex items-start gap-3 mb-3">
             {audienceIcons.public}
             <div className="flex-1">
