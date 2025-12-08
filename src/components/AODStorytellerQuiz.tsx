@@ -13,8 +13,11 @@ import {
   Map,
   Clock,
 } from "lucide-react";
+import IntroductionScreen from "./IntroductionScreen";
+import EnhancedResults from "./EnhancedResults";
 
 const AODStorytellerQuiz = () => {
+  const [showIntro, setShowIntro] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState({});
   const [showResults, setShowResults] = useState(false);
@@ -550,139 +553,31 @@ const AODStorytellerQuiz = () => {
   };
 
   const resetQuiz = () => {
+    setShowIntro(true);
     setCurrentQuestion(0);
     setScores({});
     setShowResults(false);
   };
 
+  const startQuiz = () => {
+    setShowIntro(false);
+  };
+
+  // Show introduction screen first
+  if (showIntro) {
+    return <IntroductionScreen onStart={startQuiz} />;
+  }
+
+  // Show enhanced results
   if (showResults) {
     const { primary, secondary, all } = getTopArchetypes();
-    const Icon = primary.icon;
 
     return (
-      <div className="min-h-screen bg-gradient-to-br from-teal-50 via-emerald-50 to-blue-50 p-6">
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">
-              Your Storyteller Archetype
-            </h2>
-            <p className="text-gray-600 mb-8">
-              Based on your responses, here's your unique storytelling profile
-            </p>
-
-            {/* Primary Archetype */}
-            <div className={`${primary.color} rounded-xl p-6 mb-6`}>
-              <div className="flex items-center gap-3 mb-4">
-                <Icon size={32} />
-                <div>
-                  <h3 className="text-2xl font-bold">{primary.name}</h3>
-                  <p className="text-sm opacity-75">Your primary archetype</p>
-                </div>
-              </div>
-              <p className="mb-4">{primary.description}</p>
-              <div className="bg-white bg-opacity-50 rounded-lg p-4">
-                <p className="font-semibold mb-2">
-                  Your storytelling superpowers:
-                </p>
-                <p className="italic">{primary.superpowers}</p>
-              </div>
-            </div>
-
-            {/* Secondary Archetypes */}
-            {secondary.length > 0 && (
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  You also bring strong elements of:
-                </h3>
-                <div className="space-y-3">
-                  {secondary.map((arch: any) => {
-                    const SecIcon = arch.icon;
-                    return (
-                      <div
-                        key={arch.key}
-                        className={`${arch.color} rounded-lg p-4`}
-                      >
-                        <div className="flex items-center gap-2 mb-2">
-                          <SecIcon size={20} />
-                          <h4 className="font-bold">{arch.name}</h4>
-                        </div>
-                        <p className="text-sm">{arch.description}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
-            {/* Where your voice shines */}
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 mb-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
-                Where your voice shines
-              </h3>
-              <p className="text-gray-700">
-                Your combination of {primary.name}
-                {secondary.length > 0 &&
-                  ` with ${secondary
-                    .map((s: any) => s.name)
-                    .join(" and ")}`}{" "}
-                makes you particularly effective in peer support settings,
-                community advocacy, and educational contexts where authenticity
-                and lived experience matter most. You bring a valuable
-                perspective that helps bridge understanding and build
-                connection.
-              </p>
-            </div>
-
-            {/* Score breakdown */}
-            <div className="border-t pt-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-4">
-                Your full profile
-              </h3>
-              <div className="space-y-2">
-                {all.slice(0, 6).map((arch: any) => (
-                  <div key={arch.key} className="flex items-center gap-3">
-                    <div className="w-32 text-sm text-gray-600 font-medium">
-                      {arch.name}
-                    </div>
-                    <div className="flex-1 bg-gray-200 rounded-full h-3">
-                      <div
-                        className={`${
-                          arch.color.split(" ")[0]
-                        } h-3 rounded-full transition-all`}
-                        style={{
-                          width: `${
-                            ((arch.score as number) /
-                              (all[0].score as number)) *
-                            100
-                          }%`,
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <button
-              onClick={resetQuiz}
-              className="w-full mt-8 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-            >
-              Take the quiz again
-            </button>
-          </div>
-
-          <div className="text-center text-sm text-gray-600">
-            <p>
-              Remember: All storytelling voices are valuable in harm reduction
-              work.
-            </p>
-            <p>
-              Your unique combination of perspectives is what makes your
-              contribution special.
-            </p>
-          </div>
-        </div>
-      </div>
+      <EnhancedResults
+        primaryArchetype={primary}
+        secondaryArchetypes={secondary}
+        allScores={all}
+      />
     );
   }
 
