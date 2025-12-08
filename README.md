@@ -14,11 +14,13 @@ This tool is designed for **the general public** - anyone interested in understa
 ## ✨ Key Features
 
 ### Interactive Quiz
+
 - 18 carefully crafted questions exploring storytelling approaches
 - Sophisticated scoring algorithm identifying primary and secondary archetypes
 - Progress tracking and intuitive user experience
 
 ### Comprehensive Results
+
 - **Archetype Profile**: Your primary storytelling style plus secondary strengths
 - **SHARE Principles**: How you embody Intentional, Purposeful, and Meaningful storytelling
 - **Boundaries & Self-Care**: Personalized guidance using the Traffic Light System
@@ -29,6 +31,7 @@ This tool is designed for **the general public** - anyone interested in understa
 - **Resources**: Links to NUAA programs, downloadable templates, and support services
 
 ### Educational Integration
+
 - Grounded in SHARE & BUILD training principles
 - Harm reduction values throughout
 - Connection to peer work expertise
@@ -93,6 +96,7 @@ This tool translates key concepts from NUAA's professional peer work training:
 **SHARE & BUILD** is NUAA's AOD Peer Work Foundations Training program, designed to empower people with lived or living experience (LLE) in the AOD field to share their stories with confidence, safety, and impact.
 
 The training explores:
+
 - Crafting engaging personal narratives
 - Developing empowering storytelling practices
 - Adapting storytelling to diverse contexts
@@ -102,14 +106,16 @@ This quiz tool introduces these concepts to the general public as a gateway to t
 
 ## 🎓 Who Is This Tool For?
 
-### ✅ Perfect for:
+### ✅ Perfect for
+
 - People with lived/living experience of drug use exploring how to share their stories
 - AOD sector workers wanting to understand peer work storytelling
 - Community members curious about harm reduction approaches
 - Anyone interested in effective, ethical storytelling about sensitive topics
 - People considering NUAA's SHARE & BUILD training
 
-### ❌ This tool is NOT:
+### ❌ This tool is NOT
+
 - A replacement for professional SHARE & BUILD training
 - Certification or credential program
 - Clinical assessment or therapy
@@ -121,24 +127,28 @@ This quiz tool introduces these concepts to the general public as a gateway to t
 This tool embodies NUAA's values:
 
 ### Harm Reduction First
+
 - Non-judgmental language throughout
 - Challenges stigma and prohibition narratives
 - Centers dignity and human rights
 - Promotes evidence-based approaches
 
 ### Lived Experience Expertise
+
 - Recognizes peer work as professional practice
 - Values diverse storytelling approaches
 - Acknowledges the power and responsibility of sharing stories
 - Treats personal narratives as valuable knowledge
 
 ### Safety & Boundaries
+
 - Emphasizes the Traffic Light System for safe sharing
 - Provides self-care guidance for each archetype
 - Promotes sustainable storytelling practices
 - Connects users to support resources
 
 ### Community & Connection
+
 - Acknowledges Traditional Custodians
 - Promotes inclusive, accessible language
 - Builds understanding across differences
@@ -169,6 +179,7 @@ src/
 This tool is designed to be hosted on NUAA's website, accessible to the general public.
 
 Requirements:
+
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - JavaScript enabled
 - No login or personal data collection required
@@ -194,13 +205,13 @@ Developed for NUAA (NSW Users and AIDS Association). All content reflects NUAA's
 
 ## 📖 Additional Documentation
 
-- **[UPGRADE_PLAN.md](./UPGRADE_PLAN.md)**: Detailed upgrade specifications based on SHARE & BUILD materials
 - **[Facilitator Handbook.pdf](./Facilitator%20Handbook.pdf)**: SHARE & BUILD facilitator operations manual
 - **[SHARE and BUILD Participant Workbooks.pdf](./SHARE%20and%20BUILD%20Participant%20Workbooks.pdf)**: Full training workbook content
 
 ---
 
 **For more information about NUAA's programs:**
+
 - **Website**: [nuaa.org.au](https://www.nuaa.org.au)
 - **ConnectED Programs**: Professional development for people with LLE in AOD workforce
 - **PeerLine**: Telephone peer support line
