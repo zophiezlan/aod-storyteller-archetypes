@@ -19,7 +19,7 @@ import EnhancedResults from "./EnhancedResults";
 const AODStorytellerQuiz = () => {
   const [showIntro, setShowIntro] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [scores, setScores] = useState({});
+  const [scores, setScores] = useState<Record<string, number>>({});
   const [showResults, setShowResults] = useState(false);
 
   const archetypes = {
@@ -535,10 +535,10 @@ const AODStorytellerQuiz = () => {
     const sorted = Object.entries(scores)
       .map(([key, score]) => ({
         key,
-        score,
+        score: score as number,
         ...archetypes[key as keyof typeof archetypes],
       }))
-      .sort((a: any, b: any) => b.score - a.score);
+      .sort((a, b) => b.score - a.score);
 
     const topScore = sorted[0].score;
     const primary = sorted[0];
@@ -550,13 +550,6 @@ const AODStorytellerQuiz = () => {
       .slice(0, 2);
 
     return { primary, secondary, all: sorted };
-  };
-
-  const resetQuiz = () => {
-    setShowIntro(true);
-    setCurrentQuestion(0);
-    setScores({});
-    setShowResults(false);
   };
 
   const startQuiz = () => {
