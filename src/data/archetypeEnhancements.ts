@@ -805,37 +805,1034 @@ export const archetypeEnhancements: Record<string, ArchetypeEnhancement> = {
     },
   },
 
-  // Additional archetypes would follow the same comprehensive structure
-  // For brevity in this response, I've shown the detailed pattern
-  // The remaining 7 archetypes (creator, witness, ally, pragmatist, challenger, navigator, historian)
-  // would each have full entries following this same thorough template
-
-  // Placeholder for remaining archetypes - would be fully fleshed out in production
   creator: {
     key: 'creator',
     name: 'The Creator',
+
     sharePrinciples: {
-      intentional: 'You share stories through creative mediums to disrupt assumptions and offer fresh perspectives.',
-      purposeful: 'Your primary purpose is inspiration through innovation, using art to make people see differently.',
-      meaningful: 'You create impact by making the familiar strange, challenging stereotypes through creative expression.',
+      intentional: 'You share stories through creative mediums to disrupt assumptions and offer fresh perspectives. Your "why" is showing that art can shift consciousness and challenge stereotypes.',
+      purposeful: 'Your primary purpose is inspiration through innovation—using creative expression to help people see drug use, harm reduction, and recovery in entirely new ways.',
+      meaningful: 'You create impact by making the familiar strange, offering audiences an entry point through beauty, metaphor, or surprise that bypasses their defenses.',
     },
+
     primaryPurpose: 'inspiration',
     secondaryPurpose: 'advocacy',
-    // ... (full structure would be completed)
-    boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] },
-    audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } },
-    universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] },
-    storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] },
-    reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] },
+
+    boundaries: {
+      strengths: [
+        'Art creates natural distance—you can explore without over-exposing',
+        'Creative process itself can be therapeutic and boundary-protecting',
+        'Metaphor and symbolism allow sharing without explicit details',
+      ],
+      watchFor: [
+        'Art becoming performative rather than authentic',
+        'Pressure to create trauma porn or exploit pain for impact',
+        'Burning out trying to constantly innovate or impress',
+        'Confusing artistic vulnerability with lack of boundaries',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Creating art about experiences still too raw or unprocessed',
+          'Work that feels exploitative of yourself or others',
+          'Projects where the creative process itself is harmful',
+        ],
+        yellow: [
+          'Pushing creative boundaries when you\'re not in a stable place',
+          'Work that might be misunderstood without context',
+          'Projects that require you to revisit difficult memories repeatedly',
+        ],
+        green: [
+          'Art that transforms pain into something meaningful',
+          'Creative work that feels authentic and grounded',
+          'Projects that energize rather than deplete you',
+        ],
+      },
+      selfCareTips: [
+        'Build in processing time after creating difficult pieces',
+        'Have a trusted creative circle for feedback before going public',
+        'Remember: Not everything you create needs to be shared',
+        'Protect your creative process—it\'s for you first, audiences second',
+        'Balance difficult work with joyful, playful creation',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'Arts and cultural events',
+        'Community exhibitions',
+        'Alternative harm reduction spaces',
+        'Youth and creative communities',
+      ],
+      adaptationTips: {
+        peers: 'Share your creative process, inspire others to find their own artistic voice. Show that creativity is for everyone.',
+        providers: 'Use art to humanize and challenge their clinical perspectives, create empathy through beauty and metaphor.',
+        policyMakers: 'Creative work can bypass political defenses, create emotional connections that statistics can\'t.',
+        public: 'Art reaches people who might not engage with traditional harm reduction messaging. Make it accessible and engaging.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'The transformative power of creative expression',
+        'Finding beauty in unexpected places',
+        'Freedom in artistic exploration',
+        'Connection through shared creativity',
+      ],
+      turningPoints: [
+        'Discovering art as a way to process experience',
+        'Creating something that surprises even yourself',
+        'Reaching someone through your work in an unexpected way',
+        'Finding your creative voice and claiming it',
+      ],
+      avoidExplicitDetails: [
+        'Graphic drug use imagery for shock value',
+        'Exploitative representations of suffering',
+        'Details that sensationalize rather than illuminate',
+      ],
+      focusInstead: [
+        'The emotional truth behind experiences',
+        'Metaphor and symbolism that invite reflection',
+        'Beauty, humor, or surprise as entry points',
+        'The creative process itself as healing',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Discovering creative expression as outlet',
+        'Creating work that challenged assumptions',
+        'Connecting with others through art',
+        'Transforming pain into something meaningful',
+      ],
+      themes: [
+        'Creativity as resistance',
+        'Art as healing practice',
+        'Innovation and experimentation',
+        'Finding voice through expression',
+      ],
+      emotionsAndFeelings: [
+        'Liberation through creativity',
+        'Joy in making',
+        'Surprise at your own creation',
+        'Connection through shared artistry',
+      ],
+      skillsAndLessons: [
+        'Using art to process complex emotions',
+        'Finding creative courage',
+        'Making the invisible visible',
+        'Trusting your artistic instincts',
+      ],
+      relevantContexts: [
+        'Art exhibitions and shows',
+        'Creative workshops',
+        'Community arts programs',
+        'Performance spaces',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Does this work feel authentic or am I performing?',
+        'Have I created appropriate distance through the art form?',
+        'Am I ready for diverse interpretations of my work?',
+        'Do I have support for any reactions this might provoke?',
+      ],
+      afterSharing: [
+        'How do I feel about how my work was received?',
+        'Can I hold space for misinterpretation without defensiveness?',
+        'What did I learn through the creative process?',
+        'Do I need to process anything that arose?',
+      ],
+      ongoing: [
+        'Is my creativity serving me or am I serving it?',
+        'How can I keep my artistic practice joyful and sustainable?',
+        'What boundaries protect my creative energy?',
+        'Who are my trusted artistic mentors and mirrors?',
+      ],
+    },
   },
 
-  // Remaining archetypes would follow...
-  witness: { key: 'witness', name: 'The Witness', sharePrinciples: { intentional: '', purposeful: '', meaningful: '' }, primaryPurpose: 'education', secondaryPurpose: 'advocacy', boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] }, audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } }, universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] }, storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] }, reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] } },
-  ally: { key: 'ally', name: 'The Ally', sharePrinciples: { intentional: '', purposeful: '', meaningful: '' }, primaryPurpose: 'connection', secondaryPurpose: 'advocacy', boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] }, audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } }, universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] }, storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] }, reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] } },
-  pragmatist: { key: 'pragmatist', name: 'The Pragmatist', sharePrinciples: { intentional: '', purposeful: '', meaningful: '' }, primaryPurpose: 'education', secondaryPurpose: 'healing', boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] }, audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } }, universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] }, storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] }, reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] } },
-  challenger: { key: 'challenger', name: 'The Challenger', sharePrinciples: { intentional: '', purposeful: '', meaningful: '' }, primaryPurpose: 'advocacy', secondaryPurpose: 'education', boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] }, audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } }, universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] }, storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] }, reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] } },
-  navigator: { key: 'navigator', name: 'The Navigator', sharePrinciples: { intentional: '', purposeful: '', meaningful: '' }, primaryPurpose: 'education', secondaryPurpose: 'connection', boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] }, audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } }, universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] }, storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] }, reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] } },
-  historian: { key: 'historian', name: 'The Historian', sharePrinciples: { intentional: '', purposeful: '', meaningful: '' }, primaryPurpose: 'education', secondaryPurpose: 'connection', boundaries: { strengths: [], watchFor: [], trafficLightGuidance: { red: [], yellow: [], green: [] }, selfCareTips: [] }, audiences: { bestFit: [], adaptationTips: { peers: '', providers: '', policyMakers: '', public: '' } }, universalExperiences: { emotionsToEmphasize: [], turningPoints: [], avoidExplicitDetails: [], focusInstead: [] }, storyCrafting: { lifeEvents: [], themes: [], emotionsAndFeelings: [], skillsAndLessons: [], relevantContexts: [] }, reflectivePractice: { beforeSharing: [], afterSharing: [], ongoing: [] } },
+  witness: {
+    key: 'witness',
+    name: 'The Witness',
+
+    sharePrinciples: {
+      intentional: 'You share stories to reveal unvarnished truth about drug use and harm reduction realities. Your "why" is bringing hidden experiences into the light without judgment.',
+      purposeful: 'Your primary purpose is education through honest observation—showing what\'s really happening, not what people want to hear or assume.',
+      meaningful: 'You create impact by offering clear-eyed testimony that cuts through myths and stereotypes, building understanding through unfiltered truth.',
+    },
+
+    primaryPurpose: 'education',
+    secondaryPurpose: 'advocacy',
+
+    boundaries: {
+      strengths: [
+        'Comfortable with discomfort—can speak difficult truths',
+        'Clear distinction between observing and over-identifying',
+        'Good at factual, grounded sharing without emotional overwhelm',
+      ],
+      watchFor: [
+        'Becoming desensitized to difficult realities',
+        'Sharing trauma without adequate self-protection',
+        'Secondary trauma from constantly witnessing others\' pain',
+        'Pressure to be the "voice" for entire communities',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Testimonies that retraumatize you in the telling',
+          'Stories that betray confidences or identities',
+          'Observations you haven\'t had time to process',
+        ],
+        yellow: [
+          'Recent events still unfolding',
+          'Situations where your testimony might cause harm',
+          'Topics where you\'re still finding your objectivity',
+        ],
+        green: [
+          'Well-observed realities you can discuss calmly',
+          'Truths that need telling and you\'re positioned to share',
+          'Honest accounts that educate without sensationalizing',
+        ],
+      },
+      selfCareTips: [
+        'Build regular decompression practices after witnessing difficult situations',
+        'Create clear boundaries between observer and participant roles',
+        'Seek supervision or peer support for processing what you witness',
+        'Remember: You can bear witness without carrying all the weight',
+        'Balance heavy witnessing with joy and lightness in other areas',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'Documentary and journalism projects',
+        'Research and academic settings',
+        'Professional conferences',
+        'Policy consultations',
+      ],
+      adaptationTips: {
+        peers: 'Honor their experiences while adding your observations. Create space for multiple truths to coexist.',
+        providers: 'Bridge the gap between their clinical view and on-the-ground realities. Speak truth that improves practice.',
+        policyMakers: 'Provide unvarnished testimony that grounds abstract policy in real lives and consequences.',
+        public: 'Challenge assumptions with clear observation, helping them see beyond media stereotypes.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'Clear-sighted observation without judgment',
+        'Commitment to truth-telling',
+        'Steady presence amid difficulty',
+        'Integrity in bearing witness',
+      ],
+      turningPoints: [
+        'Realizing your observations could help others understand',
+        'Choosing to speak truth despite discomfort',
+        'Being believed and validated as a witness',
+        'Seeing your testimony create real change',
+      ],
+      avoidExplicitDetails: [
+        'Graphic details that sensationalize rather than inform',
+        'Identifying information that breaks confidentiality',
+        'Voyeuristic descriptions that exploit suffering',
+      ],
+      focusInstead: [
+        'Patterns and systemic issues you\'ve observed',
+        'The gap between public perception and reality',
+        'What honest observation reveals about policy needs',
+        'Truth-telling as ethical practice',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Observing realities others don\'t see',
+        'Speaking difficult truths that needed telling',
+        'Documenting experiences for the record',
+        'Having your testimony create understanding',
+      ],
+      themes: [
+        'Truth and honesty',
+        'Observation without judgment',
+        'Reality versus perception',
+        'Bearing witness as service',
+      ],
+      emotionsAndFeelings: [
+        'Steadiness in difficult situations',
+        'Commitment to accuracy',
+        'Integrity and honesty',
+        'Compassionate objectivity',
+      ],
+      skillsAndLessons: [
+        'Observing clearly without projecting',
+        'Speaking truth with care',
+        'Maintaining boundaries while bearing witness',
+        'Using testimony to educate and inform',
+      ],
+      relevantContexts: [
+        'Research interviews',
+        'Documentary projects',
+        'Policy hearings',
+        'Professional testimony',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Is this truth mine to tell or does it belong to others?',
+        'Can I speak this honestly without harming myself or others?',
+        'Am I clear-headed enough to be an accurate witness?',
+        'Do I have what I need to stay grounded in difficult testimony?',
+      ],
+      afterSharing: [
+        'How am I carrying what I witnessed and shared?',
+        'Do I need to process or debrief?',
+        'Did my testimony serve the purpose I intended?',
+        'What impact did this have on me?',
+      ],
+      ongoing: [
+        'Am I experiencing secondary trauma from constant witnessing?',
+        'How do I maintain healthy boundaries as an observer?',
+        'What practices help me process what I witness?',
+        'Am I balancing truth-telling with self-protection?',
+      ],
+    },
+  },
+
+  ally: {
+    key: 'ally',
+    name: 'The Ally',
+
+    sharePrinciples: {
+      intentional: 'You share stories to amplify voices of people who use drugs and build genuine solidarity. Your "why" is standing alongside, not speaking for or over.',
+      purposeful: 'Your primary purpose is connection through solidarity—using your position to create space, challenge stigma, and support self-determination.',
+      meaningful: 'You create impact by leveraging whatever privilege or platform you have to make room for others, building authentic relationships across difference.',
+    },
+
+    primaryPurpose: 'connection',
+    secondaryPurpose: 'advocacy',
+
+    boundaries: {
+      strengths: [
+        'Aware of your position and privilege, use it strategically',
+        'Good at stepping back and amplifying rather than centering yourself',
+        'Comfortable with discomfort of being called in or challenged',
+      ],
+      watchFor: [
+        'Savior complex—wanting to rescue rather than support',
+        'Speaking for rather than with or alongside',
+        'Using others\' stories without permission or credit',
+        'Performing allyship for recognition rather than genuine solidarity',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Stories that aren\'t yours to tell',
+          'Speaking for communities when they can speak for themselves',
+          'Using allyship performatively for personal gain',
+        ],
+        yellow: [
+          'Uncertain about whether your voice is needed in this space',
+          'Sharing others\' experiences without explicit consent',
+          'Topics where you need to listen more before speaking',
+        ],
+        green: [
+          'Using your platform to amplify marginalized voices',
+          'Speaking about your own learning and growth as ally',
+          'Challenging stigma in spaces where you have credibility',
+        ],
+      },
+      selfCareTips: [
+        'Build genuine relationships, not transactional allyship',
+        'Be accountable to communities you\'re allied with',
+        'Welcome being called in—it\'s part of growth',
+        'Remember: Allyship is a practice, not an identity',
+        'Take care of yourself without centering your own discomfort',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'Mixed audiences where you can bridge gaps',
+        'Spaces where stigma is high',
+        'Professional settings where you have credibility',
+        'Community building contexts',
+      ],
+      adaptationTips: {
+        peers: 'Listen more than you speak. Learn. Use your position to create space and access for others.',
+        providers: 'Challenge stigma from inside professional spaces. Model genuine respect and partnership.',
+        policyMakers: 'Leverage any credibility you have to amplify peer voices and support their demands.',
+        public: 'Use your story of becoming an ally to invite others into solidarity and challenge assumptions.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'Growth through relationship and accountability',
+        'Discomfort of learning and being challenged',
+        'Commitment to solidarity over comfort',
+        'Humility and willingness to listen',
+      ],
+      turningPoints: [
+        'Realizing your assumptions were wrong',
+        'Being called in and choosing to learn',
+        'Building genuine relationships across difference',
+        'Using your position to create real change',
+      ],
+      avoidExplicitDetails: [
+        'Others\' stories without permission',
+        'Trauma voyeurism or tragedy porn',
+        'Savior narratives that center yourself',
+      ],
+      focusInstead: [
+        'Your own learning journey as an ally',
+        'How you were challenged to grow',
+        'What genuine solidarity looks like',
+        'Systems change, not individual rescue',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Unlearning stigma and misconceptions',
+        'Building authentic relationships',
+        'Being accountable and learning from mistakes',
+        'Using privilege or position to create space',
+      ],
+      themes: [
+        'Solidarity and accountability',
+        'Learning and growth',
+        'Leveraging privilege for justice',
+        'Genuine relationship building',
+      ],
+      emotionsAndFeelings: [
+        'Humility and openness',
+        'Discomfort of growth',
+        'Commitment to justice',
+        'Gratitude for trust given',
+      ],
+      skillsAndLessons: [
+        'Listening deeply without defensiveness',
+        'Stepping back to make room',
+        'Being accountable',
+        'Using position for collective benefit',
+      ],
+      relevantContexts: [
+        'Professional settings',
+        'Community partnerships',
+        'Policy advocacy',
+        'Educational spaces',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Is my voice needed here or should I amplify others?',
+        'Am I centering myself or the issue?',
+        'Have I checked in with the communities I\'m allied with?',
+        'Am I practicing solidarity or performing allyship?',
+      ],
+      afterSharing: [
+        'Did I amplify or overshadow?',
+        'What feedback am I receiving from communities I\'m allied with?',
+        'Where can I learn and grow from this experience?',
+        'Did I use my position effectively?',
+      ],
+      ongoing: [
+        'Am I building genuine relationships or tokenizing?',
+        'How am I staying accountable?',
+        'What am I learning about power and privilege?',
+        'Is my allyship welcome and useful?',
+      ],
+    },
+  },
+
+  pragmatist: {
+    key: 'pragmatist',
+    name: 'The Pragmatist',
+
+    sharePrinciples: {
+      intentional: 'You share stories to cut through BS and focus on what actually works. Your "why" is grounded in practical wisdom and real-world solutions.',
+      purposeful: 'Your primary purpose is education through straightforward honesty—showing what helps, what doesn\'t, and why based on lived experience.',
+      meaningful: 'You create impact by offering grounded, practical guidance that people can actually use, based on trial and error in the real world.',
+    },
+
+    primaryPurpose: 'education',
+    secondaryPurpose: 'healing',
+
+    boundaries: {
+      strengths: [
+        'Clear about facts versus feelings, can separate them',
+        'Good at sharing practical information without over-personalizing',
+        'Comfortable being direct without being cold',
+      ],
+      watchFor: [
+        'Minimizing emotions (yours or others\') in favor of "just the facts"',
+        'Becoming cynical or dismissive of less practical approaches',
+        'Forgetting to honor the emotional weight beneath practical issues',
+        'Burning out from always being the "realistic" one',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Practical advice about situations that still trigger strong emotions',
+          'Details that minimize the real difficulty of issues',
+          'Information shared without adequate safety context',
+        ],
+        yellow: [
+          'Advice about strategies you\'re still figuring out',
+          'Practical tips that work for you but might not translate',
+          'Directness that might land harshly without relationship',
+        ],
+        green: [
+          'Well-tested strategies you can share confidently',
+          'Practical information that truly helps',
+          'Honest assessment of what works and what doesn\'t',
+        ],
+      },
+      selfCareTips: [
+        'Honor your own emotions even when you\'re focused on practical matters',
+        'Build space for reflection, not just action',
+        'Remember: Being realistic doesn\'t mean being hard on yourself',
+        'Connect with others who value straightforward honesty',
+        'Balance pragmatism with hope—both matter',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'Peer education and training',
+        'Service delivery settings',
+        'Practical workshops',
+        'Front-line worker training',
+      ],
+      adaptationTips: {
+        peers: 'Share what actually works in daily life. Give practical tips without preaching. Honor diverse approaches.',
+        providers: 'Bridge theory and practice. Show them what real-world implementation looks like.',
+        policyMakers: 'Focus on evidence and outcomes. What works, what doesn\'t, and why. Be specific.',
+        public: 'Make harm reduction concrete and practical. Show real strategies, not just philosophy.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'Satisfaction of finding what actually works',
+        'Relief when practical solutions emerge',
+        'Frustration with theoretical versus real',
+        'Confidence from tested wisdom',
+      ],
+      turningPoints: [
+        'Discovering a practical strategy that made real difference',
+        'Learning through trial and error',
+        'Cutting through confusion to find what works',
+        'Helping others with straightforward practical advice',
+      ],
+      avoidExplicitDetails: [
+        'Technical drug details unless necessary for practical point',
+        'Overly clinical descriptions',
+        'Details that minimize the emotional reality',
+      ],
+      focusInstead: [
+        'What actually works versus what sounds good',
+        'Practical lessons from experience',
+        'Trial and error process',
+        'Real-world problem-solving',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Figuring out what works through experience',
+        'Learning practical harm reduction strategies',
+        'Helping others with grounded advice',
+        'Navigating systems effectively',
+      ],
+      themes: [
+        'Practical wisdom',
+        'Learning what works',
+        'Grounded honesty',
+        'Real-world solutions',
+      ],
+      emotionsAndFeelings: [
+        'Satisfaction of practical success',
+        'Confidence from experience',
+        'Respect for what works',
+        'Impatience with theory over practice',
+      ],
+      skillsAndLessons: [
+        'Testing what works in real life',
+        'Cutting through BS',
+        'Practical problem-solving',
+        'Sharing grounded wisdom',
+      ],
+      relevantContexts: [
+        'Peer training',
+        'Harm reduction workshops',
+        'Service delivery',
+        'Practical education',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Is this practical advice grounded in real experience?',
+        'Am I honoring the emotional dimension alongside the practical?',
+        'Will this information actually help or just sound smart?',
+        'Am I being realistic without being cynical?',
+      ],
+      afterSharing: [
+        'Did my practical focus serve people well?',
+        'Did I balance honesty with compassion?',
+        'What questions came up that I should consider?',
+        'Was I grounded and helpful?',
+      ],
+      ongoing: [
+        'Am I staying connected to emotions while being practical?',
+        'How can I honor both pragmatism and hope?',
+        'What am I learning from ongoing experience?',
+        'Am I being realistic or becoming cynical?',
+      ],
+    },
+  },
+
+  challenger: {
+    key: 'challenger',
+    name: 'The Challenger',
+
+    sharePrinciples: {
+      intentional: 'You share stories to disrupt harmful assumptions and push people out of their comfort zones. Your "why" is refusing to accept stigma and demanding better.',
+      purposeful: 'Your primary purpose is advocacy through confrontation—using strategic challenge to shift perspectives and create discomfort that leads to growth.',
+      meaningful: 'You create impact by disrupting, questioning, and refusing to let harmful narratives go unchallenged, creating space for new thinking.',
+    },
+
+    primaryPurpose: 'advocacy',
+    secondaryPurpose: 'education',
+
+    boundaries: {
+      strengths: [
+        'Comfortable with conflict when it serves justice',
+        'Clear about what you will and won\'t tolerate',
+        'Good at strategic confrontation without losing yourself',
+      ],
+      watchFor: [
+        'Burning out from constant battle',
+        'Anger overwhelming strategic thinking',
+        'Isolating yourself through constant challenge',
+        'Taking on every fight instead of choosing battles',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Challenges made in rage rather than strategy',
+          'Confrontations that compromise your safety',
+          'Fighting battles that aren\'t yours to fight',
+        ],
+        yellow: [
+          'Challenges when you\'re already depleted',
+          'Confrontations without adequate support nearby',
+          'Disrupting spaces where you haven\'t built relationship',
+        ],
+        green: [
+          'Strategic challenges that can create real change',
+          'Disruption grounded in clear purpose',
+          'Confrontation you\'re prepared for and supported in',
+        ],
+      },
+      selfCareTips: [
+        'Choose your battles—you can\'t fight everything',
+        'Build community with fellow challengers for support',
+        'Process anger in healthy ways',
+        'Celebrate wins, don\'t just move to next fight',
+        'Remember: Rest is resistance too',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'Spaces where harmful assumptions dominate',
+        'Professional conferences',
+        'Media and public discourse',
+        'Policy and advocacy settings',
+      ],
+      adaptationTips: {
+        peers: 'Model strategic challenge without burning bridges. Show how disruption can be effective.',
+        providers: 'Challenge their assumptions directly but constructively. Push for better without destroying relationship.',
+        policyMakers: 'Be disruptive enough to be heard, strategic enough to be effective.',
+        public: 'Challenge dominant narratives while inviting people to question alongside you.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'Righteous anger at injustice',
+        'Courage to speak unpopular truths',
+        'Determination to push for better',
+        'Frustration with complacency',
+      ],
+      turningPoints: [
+        'Deciding you wouldn\'t stay silent anymore',
+        'First time your challenge created real change',
+        'Finding others who also refuse to accept status quo',
+        'Learning to challenge strategically, not just angrily',
+      ],
+      avoidExplicitDetails: [
+        'Personal attacks rather than systemic critique',
+        'Rage without purpose',
+        'Details that alienate potential allies',
+      ],
+      focusInstead: [
+        'What assumptions need disrupting and why',
+        'Strategic challenge that invites growth',
+        'Collective resistance, not just individual rage',
+        'Vision for what could be different',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Speaking up when others stayed silent',
+        'Challenging harmful assumptions',
+        'Creating discomfort that led to change',
+        'Refusing to accept stigma or injustice',
+      ],
+      themes: [
+        'Disruption and resistance',
+        'Challenging norms',
+        'Strategic confrontation',
+        'Refusing complacency',
+      ],
+      emotionsAndFeelings: [
+        'Righteous anger',
+        'Courage and determination',
+        'Impatience with injustice',
+        'Hope through resistance',
+      ],
+      skillsAndLessons: [
+        'Strategic challenge',
+        'Speaking truth to power',
+        'Disrupting harmful patterns',
+        'Sustaining resistance',
+      ],
+      relevantContexts: [
+        'Advocacy campaigns',
+        'Professional conferences',
+        'Media engagement',
+        'Policy challenge',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Is this challenge strategic or just cathartic?',
+        'Do I have support for the potential backlash?',
+        'Am I clear on what change I\'m pushing for?',
+        'Is this the right moment and audience?',
+      ],
+      afterSharing: [
+        'Did my challenge create the disruption I intended?',
+        'How am I carrying the aftermath?',
+        'What did I learn about effective challenge?',
+        'Do I need to process anger or backlash?',
+      ],
+      ongoing: [
+        'Am I sustaining myself while challenging systems?',
+        'How do I balance anger with strategy?',
+        'What makes my challenges effective versus alienating?',
+        'Am I building movement or burning bridges?',
+      ],
+    },
+  },
+
+  navigator: {
+    key: 'navigator',
+    name: 'The Navigator',
+
+    sharePrinciples: {
+      intentional: 'You share stories to help people find their way through complex harm reduction systems and services. Your "why" is making the confusing accessible.',
+      purposeful: 'Your primary purpose is education through guidance—translating bureaucracy, explaining processes, and showing people clear pathways forward.',
+      meaningful: 'You create impact by simplifying complexity, removing barriers to access, and helping people successfully navigate systems that weren\'t designed for them.',
+    },
+
+    primaryPurpose: 'education',
+    secondaryPurpose: 'connection',
+
+    boundaries: {
+      strengths: [
+        'Good at explaining systems without taking on responsibility for them',
+        'Clear about what you know and what you don\'t',
+        'Comfortable guiding without controlling',
+      ],
+      watchFor: [
+        'Taking on others\' navigation as your responsibility',
+        'Frustration with systems leading to burnout',
+        'Becoming a bottleneck—everyone goes through you',
+        'Forgetting to acknowledge the emotional weight of navigation',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Guidance about systems you don\'t actually understand',
+          'Taking on responsibility for others\' decisions',
+          'Navigating for people rather than with them',
+        ],
+        yellow: [
+          'Systems you\'re still learning yourself',
+          'Situations where your guidance might not fit',
+          'Complex navigation when you\'re already stretched',
+        ],
+        green: [
+          'Clear, accurate information about systems',
+          'Guidance that empowers self-navigation',
+          'Pathways you\'ve successfully helped others navigate',
+        ],
+      },
+      selfCareTips: [
+        'Build resource lists to share rather than always explaining',
+        'Empower others to navigate, don\'t create dependency',
+        'Set limits on your availability',
+        'Celebrate successful navigation, share the load',
+        'Remember: You\'re a guide, not a savior',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'People new to harm reduction services',
+        'Service providers seeking better access',
+        'Orientation and onboarding',
+        'System navigation support',
+      ],
+      adaptationTips: {
+        peers: 'Share navigation knowledge, build collective wisdom. Teach people to fish, don\'t just fish for them.',
+        providers: 'Help them see barriers from user perspective. Improve systems, not just navigation.',
+        policyMakers: 'Show how complexity creates barriers. Advocate for simpler, more accessible systems.',
+        public: 'Demystify harm reduction services. Make access less intimidating.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'Relief when pathways become clear',
+        'Satisfaction of successful navigation',
+        'Frustration with unnecessary complexity',
+        'Empowerment through knowledge',
+      ],
+      turningPoints: [
+        'Finally understanding a confusing system',
+        'Helping someone else find their way',
+        'Discovering shortcuts or pathways',
+        'Realizing you could be a guide for others',
+      ],
+      avoidExplicitDetails: [
+        'Overwhelming detail that confuses more than clarifies',
+        'Technical jargon without translation',
+        'Information that creates dependency rather than empowerment',
+      ],
+      focusInstead: [
+        'Clear, actionable pathways',
+        'What makes navigation easier',
+        'Empowerment through knowledge',
+        'Reducing barriers to access',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Learning to navigate complex systems',
+        'Helping others find their way',
+        'Discovering hidden pathways or resources',
+        'Advocating for simpler access',
+      ],
+      themes: [
+        'Guidance and wayfinding',
+        'Access and empowerment',
+        'Simplifying complexity',
+        'Building navigation skills',
+      ],
+      emotionsAndFeelings: [
+        'Satisfaction of successful guidance',
+        'Frustration with barriers',
+        'Pride in helping others navigate',
+        'Determination to improve access',
+      ],
+      skillsAndLessons: [
+        'Understanding complex systems',
+        'Clear communication',
+        'Empowering rather than creating dependency',
+        'Advocating for better access',
+      ],
+      relevantContexts: [
+        'Service navigation support',
+        'Orientation programs',
+        'Peer navigation',
+        'System improvement advocacy',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Is my guidance clear and accurate?',
+        'Am I empowering self-navigation or creating dependency?',
+        'Do I have current, accurate information?',
+        'Am I acknowledging the emotional work of navigation?',
+      ],
+      afterSharing: [
+        'Was my guidance helpful?',
+        'Did I empower rather than rescue?',
+        'What gaps in navigation support did I notice?',
+        'How can I improve my guidance?',
+      ],
+      ongoing: [
+        'Am I staying current with system changes?',
+        'How can I build collective navigation capacity?',
+        'What boundaries protect my guiding work?',
+        'Am I advocating for better systems, not just navigation?',
+      ],
+    },
+  },
+
+  historian: {
+    key: 'historian',
+    name: 'The Historian',
+
+    sharePrinciples: {
+      intentional: 'You share stories to connect present struggles to past movements and honor those who came before. Your "why" is ensuring history informs current action.',
+      purposeful: 'Your primary purpose is education through context—showing how harm reduction evolved, what battles were fought, and what wisdom we can draw from the past.',
+      meaningful: 'You create impact by connecting people to their own history, preventing reinvention of wheels, and honoring the shoulders we stand on.',
+    },
+
+    primaryPurpose: 'education',
+    secondaryPurpose: 'connection',
+
+    boundaries: {
+      strengths: [
+        'Good at contextualizing without getting lost in nostalgia',
+        'Able to honor the past without idealizing it',
+        'Clear about which histories are yours to tell',
+      ],
+      watchFor: [
+        'Living in the past instead of learning from it',
+        'Gatekeeping history or creating false hierarchies',
+        'Romanticizing "the way things were"',
+        'Forgetting to make history relevant to present',
+      ],
+      trafficLightGuidance: {
+        red: [
+          'Histories that aren\'t yours to share',
+          'Nostalgia that dismisses present realities',
+          'Stories told without honoring their sources',
+        ],
+        yellow: [
+          'Recent history still unfolding',
+          'Contested narratives without acknowledging complexity',
+          'Historical detail that overshadows present application',
+        ],
+        green: [
+          'Well-researched historical context',
+          'Stories that illuminate present challenges',
+          'History that honors sources and inspires action',
+        ],
+      },
+      selfCareTips: [
+        'Balance looking back with present engagement',
+        'Build relationships across generations',
+        'Honor history without being bound by it',
+        'Celebrate what we\'ve learned and how we\'ve grown',
+        'Make history alive and relevant, not dusty',
+      ],
+    },
+
+    audiences: {
+      bestFit: [
+        'Orientation for new workers',
+        'Movement building',
+        'Educational conferences',
+        'Intergenerational gatherings',
+      ],
+      adaptationTips: {
+        peers: 'Share history that empowers, showing battles won and wisdom gained. Build intergenerational connection.',
+        providers: 'Give historical context for current practice. Show how we got here and why it matters.',
+        policyMakers: 'Use history to show what works, what failed, and why. Learn from past policy impacts.',
+        public: 'Connect current harm reduction to its radical, life-saving history. Show movement roots.',
+      },
+    },
+
+    universalExperiences: {
+      emotionsToEmphasize: [
+        'Pride in movement history',
+        'Gratitude for those who came before',
+        'Inspiration from past struggles',
+        'Connection across generations',
+      ],
+      turningPoints: [
+        'Learning your own community\'s history',
+        'Connecting with movement elders',
+        'Realizing current work stands on past foundations',
+        'Honoring and passing forward knowledge',
+      ],
+      avoidExplicitDetails: [
+        'Idealized versions that erase complexity',
+        'Nostalgia that dismisses current realities',
+        'History told without honoring living sources',
+      ],
+      focusInstead: [
+        'How past informs present',
+        'Lessons learned and wisdom gained',
+        'Evolution and growth',
+        'Honoring those who paved the way',
+      ],
+    },
+
+    storyCrafting: {
+      lifeEvents: [
+        'Learning movement history',
+        'Connecting with elders and archives',
+        'Sharing historical context with new generations',
+        'Applying historical lessons to present',
+      ],
+      themes: [
+        'Historical context and continuity',
+        'Honoring the past',
+        'Learning from history',
+        'Intergenerational connection',
+      ],
+      emotionsAndFeelings: [
+        'Respect for history',
+        'Gratitude for foundations',
+        'Responsibility to pass forward',
+        'Pride in movement',
+      ],
+      skillsAndLessons: [
+        'Connecting past to present',
+        'Honoring sources',
+        'Making history relevant',
+        'Building intergenerational bridges',
+      ],
+      relevantContexts: [
+        'Educational settings',
+        'Movement events',
+        'Orientation programs',
+        'Historical documentation',
+      ],
+    },
+
+    reflectivePractice: {
+      beforeSharing: [
+        'Am I honoring sources and getting history right?',
+        'Is this history relevant to present moment?',
+        'Am I creating false nostalgia or useful context?',
+        'Have I acknowledged whose shoulders I stand on?',
+      ],
+      afterSharing: [
+        'Did historical context serve the present?',
+        'Was I accurate and respectful?',
+        'What questions arose about history?',
+        'How can I deepen historical knowledge?',
+      ],
+      ongoing: [
+        'Am I staying connected to living history?',
+        'How can I honor the past while building the future?',
+        'What historical lessons matter most right now?',
+        'Am I passing knowledge forward effectively?',
+      ],
+    },
+  },
 };
 
 export default archetypeEnhancements;
