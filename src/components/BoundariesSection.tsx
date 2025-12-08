@@ -16,7 +16,7 @@ interface BoundariesSectionProps {
   };
 }
 
-const BoundariesSection = ({ archetypeKey, archetypeName, boundariesGuidance }: BoundariesSectionProps) => {
+const BoundariesSection = ({ archetypeName, boundariesGuidance }: BoundariesSectionProps) => {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
       <div className="flex items-center gap-3 mb-4">

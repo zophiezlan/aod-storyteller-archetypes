@@ -1,4 +1,4 @@
-import { ExternalLink, Phone, Mail, Download, Heart, GraduationCap, Users, BookOpen, TrendingUp } from 'lucide-react';
+import { ExternalLink, Phone, Download, Heart, GraduationCap } from 'lucide-react';
 import {
   nuaaInfo,
   shareAndBuildTraining,
@@ -193,7 +193,7 @@ const ResourcesSection = () => {
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
                       <p className="font-semibold text-gray-800">{link.name}</p>
-                      {link.phone && (
+                      {'phone' in link && link.phone && (
                         <p className="text-teal-600 font-mono text-xs flex items-center gap-1 mt-1">
                           <Phone size={12} /> {link.phone}
                         </p>

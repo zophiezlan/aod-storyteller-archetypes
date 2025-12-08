@@ -552,7 +552,7 @@ export const archetypeEnhancements: Record<string, ArchetypeEnhancement> = {
           'Lessons learned through trial and error',
           'Questions you\'re comfortable exploring publicly',
         ],
-      ],
+      },
       selfCareTips: [
         'Journal privately before sharing publicly',
         'Build a trusted processing circle for raw reflections',
@@ -699,7 +699,7 @@ export const archetypeEnhancements: Record<string, ArchetypeEnhancement> = {
           'Hope stories that feel grounded, not performative',
           'Examples of healing that honor the difficulty',
         ],
-      ],
+      },
       selfCareTips: [
         'Remember: You can\'t pour from an empty cup—your healing matters too',
         'Build regular supervision or debrief practices',
