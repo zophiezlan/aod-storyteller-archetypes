@@ -1,4 +1,4 @@
-# AOD Storyteller Archetypes - Peer Work Storytelling Discovery Tool
+<img width="393" height="281" alt="image" src="https://github.com/user-attachments/assets/86e21371-10f8-47be-a2d4-f49b3f7c1500" /><img width="393" height="281" alt="image" src="https://github.com/user-attachments/assets/375da820-7c17-4f37-8c38-206b080ab4f2" /># AOD Storyteller Archetypes - Peer Work Storytelling Discovery Tool
 
 An interactive educational tool developed for NUAA (NSW Users and AIDS Association) that helps people discover their natural storytelling style in harm reduction and peer work contexts. Based on NUAA's SHARE & BUILD Peer Work Foundations Training.
 
@@ -39,18 +39,18 @@ This tool is designed for **the general public** - anyone interested in understa
 
 ## 🌟 The 12 Storyteller Archetypes
 
-1. **The Advocate** - Driving policy change and challenging stigma
-2. **The Educator** - Making complex topics accessible
-3. **The Connector** - Building bridges and fostering community
-4. **The Explorer** - Sharing vulnerable journeys of self-discovery
-5. **The Healer** - Offering hope and holding space
-6. **The Creator** - Using art and innovation to shift perspectives
-7. **The Witness** - Providing honest, unfiltered truth
-8. **The Ally** - Amplifying voices and building solidarity
-9. **The Pragmatist** - Focusing on practical, real-world solutions
-10. **The Challenger** - Disrupting harmful assumptions
-11. **The Navigator** - Guiding others through complex systems
-12. **The Historian** - Connecting past to present, honoring context
+1. **The Advocate** - The Advocate uses their story to push for change and break down stigma. They highlight the challenges people who use drugs face and call for fairer policies and attitudes. Their stories encourage people to support change and are powerful for raising awareness and rallying support.
+2. **The Educator** - The Educator wants to share knowledge and clear up misunderstandings about drug use and harm reduction. They explain things simply, making complicated topics easy to grasp. Their stories are useful for people who want to learn more and see a true picture of drug use.
+3. **The Connector** - The Connector focuses on bringing people together and building understanding. They tell stories that show the shared experiences and relationships in the lives of people who use drugs. Connectors help audiences see the human side of these stories, encouraging empathy and support.
+4. **The Explorer** - The Explorer is curious and open, telling stories of self-discovery and personal growth. They talk about their own experiences and learnings without judgement, helping others understand the complex reality of drug use. Explorers are great for audiences who want to learn more about the journey and the ups and downs along the way.
+5. **The Healer** - The Healer focuses on the power of support and recovery. They share stories of hope, resilience, and the importance of compassion. Their stories show how both self-care and community support can make a difference, making them ideal for settings that prioritise mental health and well-being.
+6. **The Creator** - The Creator brings creativity into their storytelling, often using art, music, or writing to share their experiences. They challenge stereotypes and offer a fresh view on drug use and recovery. Their stories are engaging and help people see things in a new way.
+7. **The Witness** - The Witness observes and shares the true realities of people who use drugs, providing an honest look at the challenges and successes without judgment. Their stories offer a clear view, giving audiences a chance to understand the world of harm reduction as it is. Witnesses help people see what's often overlooked or hidden.
+8. **The Ally** - The Ally wants to stand beside people who use drugs and make their voices heard. They tell stories of solidarity, showing how support and understanding from others can make a difference. Allies are there to encourage a shared journey, building a community that feels seen and valued.
+9. **The Pragmatist** - The Pragmatist is all about keeping things real and straightforward. They focus on practical stories, sharing what works, what doesn't, and the day-to-day realities of harm reduction. Pragmatists bring grounded, honest insights that are useful for audiences looking to understand the practical side of things.
+10. **The Challenger** - The Challenger isn't afraid to confront harmful ideas and push for better understanding. They share stories that challenge stigma and shake up outdated beliefs. Challengers encourage audiences to think differently and support change by speaking up and questioning the status quo.
+11. **The Navigator** - The Navigator helps people find their way through the complex world of harm reduction services and support systems. They share stories that simplify confusing processes, making it easier for others to access help. Navigators are ideal for audiences looking for guidance and a clearer path forward.
+12. **The Historian** - The Historian brings the past into focus, telling stories of how harm reduction has grown and evolved over time. They share lessons from past successes and struggles, helping audiences see how today's challenges fit into a larger story. Historians offer context that connects the past with the present.
 
 ## 🧠 Based on SHARE & BUILD Training
 
