@@ -402,7 +402,7 @@ export const archetypeEnhancements: Record<string, ArchetypeEnhancement> = {
           'Stories that normalize diverse experiences',
           'Examples that show common struggles and strengths',
         ],
-      ],
+      },
       selfCareTips: [
         'Remember: You can\'t pour from an empty cup—your connection matters too',
         'Build time for solo processing, not just group connection',
