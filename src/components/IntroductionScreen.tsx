@@ -3,9 +3,10 @@ import { sharePrinciples } from '../data/educationalContent';
 
 interface IntroductionScreenProps {
   onStart: () => void;
+  onViewComparison?: () => void;
 }
 
-const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
+const IntroductionScreen = ({ onStart, onViewComparison }: IntroductionScreenProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 via-emerald-50 to-blue-50 p-6">
       <div className="max-w-4xl mx-auto">
@@ -180,6 +181,16 @@ const IntroductionScreen = ({ onStart }: IntroductionScreenProps) => {
           <p className="text-sm text-gray-600 mt-4">
             Takes approximately 5-7 minutes
           </p>
+          {onViewComparison && (
+            <div className="mt-4">
+              <button
+                onClick={onViewComparison}
+                className="text-teal-600 hover:text-teal-700 font-semibold underline"
+              >
+                Or explore all 12 archetypes →
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Footer */}
