@@ -83,6 +83,7 @@ State is loaded on mount and saved on every update using `useEffect` hooks.
 #### View Routing (App.tsx)
 
 Simple state-based routing between two views:
+
 - `quiz`: Main quiz interface
 - `comparison`: Archetype comparison page
 
@@ -94,12 +95,12 @@ Each archetype has the following structure:
 
 ```typescript
 {
-  key: string;           // Unique identifier
-  name: string;          // Display name
-  icon: LucideIcon;      // Icon component
-  color: string;         // Tailwind color classes
-  description: string;   // Brief description
-  superpowers: string;   // Key strengths
+  key: string; // Unique identifier
+  name: string; // Display name
+  icon: LucideIcon; // Icon component
+  color: string; // Tailwind color classes
+  description: string; // Brief description
+  superpowers: string; // Key strengths
 }
 ```
 
@@ -112,7 +113,7 @@ Each question contains:
   question: string;
   options: Array<{
     text: string;
-    scores: Record<string, number>;  // archetype_key: points
+    scores: Record<string, number>; // archetype_key: points
   }>;
 }
 ```
@@ -130,7 +131,12 @@ interface ArchetypeEnhancement {
     purposeful: string;
     meaningful: string;
   };
-  primaryPurpose: 'education' | 'inspiration' | 'advocacy' | 'healing' | 'connection';
+  primaryPurpose:
+    | "education"
+    | "inspiration"
+    | "advocacy"
+    | "healing"
+    | "connection";
   secondaryPurpose?: string;
   boundaries: {
     strengths: string[];
@@ -194,6 +200,7 @@ The PDF generator (`utils/pdfGenerator.ts`) creates a multi-page PDF report incl
 7. **Footer**: Page numbers and branding
 
 Key features:
+
 - Automatic page breaks
 - Text wrapping for long content
 - Color-coded sections
@@ -204,6 +211,7 @@ Key features:
 #### Tailwind Configuration
 
 Custom configuration in `tailwind.config.js`:
+
 - Extended color palette for archetype colors
 - Custom utilities for print styles
 - Responsive breakpoints
@@ -213,6 +221,7 @@ Custom configuration in `tailwind.config.js`:
 Elements with `.no-print` class are hidden when printing.
 
 Custom print styles in `index.css`:
+
 ```css
 @media print {
   .no-print {
@@ -243,7 +252,10 @@ useEffect(() => {
 // Save on every change
 useEffect(() => {
   if (!showIntro) {
-    localStorage.setItem(STORAGE_KEYS.CURRENT_QUESTION, currentQuestion.toString());
+    localStorage.setItem(
+      STORAGE_KEYS.CURRENT_QUESTION,
+      currentQuestion.toString()
+    );
     // ... save other state
   }
 }, [currentQuestion, scores, answerHistory, showResults, showIntro]);
@@ -252,6 +264,7 @@ useEffect(() => {
 ### 2. Back Navigation
 
 Users can navigate to previous questions:
+
 - Answer history is stored as an array
 - Previous button recalculates scores from history
 - Current answer is preserved when moving forward again
@@ -275,6 +288,7 @@ const handleDownloadPDF = () => {
 ### 4. Archetype Comparison
 
 Standalone page showing all 12 archetypes with:
+
 - Search/filter functionality
 - Grid and detail views
 - Click to expand archetype details
@@ -336,6 +350,7 @@ Currently no automated tests. Manual testing checklist:
 - Edge 90+
 
 Required features:
+
 - ES6+
 - localStorage
 - CSS Grid and Flexbox
@@ -350,6 +365,7 @@ npm run build
 ```
 
 Generates optimized static files in `dist/`:
+
 - Minified JS bundles
 - Optimized CSS
 - Copied assets
@@ -364,6 +380,7 @@ Generates optimized static files in `dist/`:
 ### Environment Variables
 
 None currently used. If needed in future:
+
 - Create `.env.local` for local development
 - Add to Vite config with `import.meta.env.VITE_*`
 
@@ -396,21 +413,25 @@ None currently used. If needed in future:
 ### Common Issues
 
 **Quiz state not loading:**
+
 - Check browser console for localStorage errors
 - Verify localStorage is enabled in browser settings
 - Clear localStorage and try again: `localStorage.clear()`
 
 **PDF not downloading:**
+
 - Check browser console for jsPDF errors
 - Verify browser supports Blob downloads
 - Try different browser
 
 **Styling issues:**
+
 - Clear browser cache
 - Check Tailwind config
 - Verify PostCSS is processing correctly
 
 **Type errors:**
+
 - Run `npm run build` to see all TypeScript errors
 - Check that all interfaces match data structures
 
