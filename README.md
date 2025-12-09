@@ -220,13 +220,6 @@ Developed for NUAA (NSW Users and AIDS Association). All content reflects NUAA's
 
 ---
 
-## 📖 Additional Documentation
-
-- **[Facilitator Handbook.pdf](./Facilitator%20Handbook.pdf)**: SHARE & BUILD facilitator operations manual
-- **[SHARE and BUILD Participant Workbooks.pdf](./SHARE%20and%20BUILD%20Participant%20Workbooks.pdf)**: Full training workbook content
-
----
-
 **For more information about NUAA's programs:**
 
 - **Website**: [nuaa.org.au](https://www.nuaa.org.au)
