@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Heart,
   Book,
@@ -16,12 +16,50 @@ import {
 import IntroductionScreen from "./IntroductionScreen";
 import EnhancedResults from "./EnhancedResults";
 
-const AODStorytellerQuiz = () => {
+// localStorage keys
+const STORAGE_KEYS = {
+  CURRENT_QUESTION: 'aod_quiz_current_question',
+  SCORES: 'aod_quiz_scores',
+  ANSWER_HISTORY: 'aod_quiz_answer_history',
+  SHOW_RESULTS: 'aod_quiz_show_results',
+};
+
+interface AODStorytellerQuizProps {
+  onViewComparison?: () => void;
+}
+
+const AODStorytellerQuiz = ({ onViewComparison }: AODStorytellerQuizProps = {}) => {
   const [showIntro, setShowIntro] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState<Record<string, number>>({});
   const [showResults, setShowResults] = useState(false);
   const [answerHistory, setAnswerHistory] = useState<Array<Record<string, number>>>([]);
+
+  // Load saved state from localStorage on mount
+  useEffect(() => {
+    const savedQuestion = localStorage.getItem(STORAGE_KEYS.CURRENT_QUESTION);
+    const savedScores = localStorage.getItem(STORAGE_KEYS.SCORES);
+    const savedHistory = localStorage.getItem(STORAGE_KEYS.ANSWER_HISTORY);
+    const savedShowResults = localStorage.getItem(STORAGE_KEYS.SHOW_RESULTS);
+
+    if (savedQuestion && savedScores && savedHistory) {
+      setCurrentQuestion(parseInt(savedQuestion));
+      setScores(JSON.parse(savedScores));
+      setAnswerHistory(JSON.parse(savedHistory));
+      setShowResults(savedShowResults === 'true');
+      setShowIntro(false);
+    }
+  }, []);
+
+  // Save state to localStorage whenever it changes
+  useEffect(() => {
+    if (!showIntro) {
+      localStorage.setItem(STORAGE_KEYS.CURRENT_QUESTION, currentQuestion.toString());
+      localStorage.setItem(STORAGE_KEYS.SCORES, JSON.stringify(scores));
+      localStorage.setItem(STORAGE_KEYS.ANSWER_HISTORY, JSON.stringify(answerHistory));
+      localStorage.setItem(STORAGE_KEYS.SHOW_RESULTS, showResults.toString());
+    }
+  }, [currentQuestion, scores, answerHistory, showResults, showIntro]);
 
   const archetypes = {
     advocate: {
@@ -573,9 +611,24 @@ const AODStorytellerQuiz = () => {
     setShowIntro(false);
   };
 
+  const resetQuiz = () => {
+    // Clear localStorage
+    localStorage.removeItem(STORAGE_KEYS.CURRENT_QUESTION);
+    localStorage.removeItem(STORAGE_KEYS.SCORES);
+    localStorage.removeItem(STORAGE_KEYS.ANSWER_HISTORY);
+    localStorage.removeItem(STORAGE_KEYS.SHOW_RESULTS);
+
+    // Reset state
+    setCurrentQuestion(0);
+    setScores({});
+    setAnswerHistory([]);
+    setShowResults(false);
+    setShowIntro(true);
+  };
+
   // Show introduction screen first
   if (showIntro) {
-    return <IntroductionScreen onStart={startQuiz} />;
+    return <IntroductionScreen onStart={startQuiz} onViewComparison={onViewComparison} />;
   }
 
   // Show enhanced results
@@ -587,6 +640,7 @@ const AODStorytellerQuiz = () => {
         primaryArchetype={primary}
         secondaryArchetypes={secondary}
         allScores={all}
+        onReset={resetQuiz}
       />
     );
   }

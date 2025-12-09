@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
-import { Share2, Download, ArrowUp } from 'lucide-react';
+import { Share2, Download, ArrowUp, FileText } from 'lucide-react';
 import { archetypeEnhancements } from '../data/archetypeEnhancements';
 import { sharePrinciples, purposeCategories } from '../data/educationalContent';
+import { generateArchetypePDF } from '../utils/pdfGenerator';
 import BoundariesSection from './BoundariesSection';
 import AudienceGuidance from './AudienceGuidance';
 import StoryTips from './StoryTips';
@@ -32,9 +33,10 @@ interface EnhancedResultsProps {
     color: string;
     score: number;
   }>;
+  onReset?: () => void;
 }
 
-const EnhancedResults = ({ primaryArchetype, secondaryArchetypes, allScores }: EnhancedResultsProps) => {
+const EnhancedResults = ({ primaryArchetype, secondaryArchetypes, allScores, onReset }: EnhancedResultsProps) => {
   const [activeTab, setActiveTab] = useState('overview');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const topRef = useRef<HTMLDivElement>(null);
@@ -62,6 +64,16 @@ const EnhancedResults = ({ primaryArchetype, secondaryArchetypes, allScores }: E
 
   const handlePrint = () => {
     window.print();
+  };
+
+  const handleDownloadPDF = () => {
+    const pdfData = {
+      primaryArchetype,
+      secondaryArchetypes,
+      allScores,
+      enhancement,
+    };
+    generateArchetypePDF(pdfData);
   };
 
   const handleShare = async () => {
@@ -133,11 +145,19 @@ const EnhancedResults = ({ primaryArchetype, secondaryArchetypes, allScores }: E
                 <span className="hidden sm:inline">Share</span>
               </button>
               <button
-                onClick={handlePrint}
+                onClick={handleDownloadPDF}
                 className="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors"
-                title="Print or save as PDF"
+                title="Download PDF report"
               >
                 <Download size={18} />
+                <span className="hidden sm:inline">PDF</span>
+              </button>
+              <button
+                onClick={handlePrint}
+                className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors"
+                title="Print results"
+              >
+                <FileText size={18} />
                 <span className="hidden sm:inline">Print</span>
               </button>
             </div>
@@ -351,7 +371,7 @@ const EnhancedResults = ({ primaryArchetype, secondaryArchetypes, allScores }: E
         {/* Retake Quiz Button */}
         <div className="text-center mt-8 mb-6 no-print">
           <button
-            onClick={() => window.location.reload()}
+            onClick={onReset || (() => window.location.reload())}
             className="bg-teal-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-teal-700 transform hover:scale-105 transition-all duration-200"
           >
             Retake Quiz

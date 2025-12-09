@@ -18,6 +18,8 @@ This tool is designed for **the general public** - anyone interested in understa
 - 18 carefully crafted questions exploring storytelling approaches
 - Sophisticated scoring algorithm identifying primary and secondary archetypes
 - Progress tracking and intuitive user experience
+- **Quiz state persistence**: Your progress is automatically saved to localStorage - return anytime to continue
+- Navigate back to previous questions to change answers
 
 ### Comprehensive Results
 
@@ -29,6 +31,15 @@ This tool is designed for **the general public** - anyone interested in understa
 - **Story Crafting**: Practical framework for developing your narratives
 - **Reflective Practice**: Prompts for ongoing development
 - **Resources**: Links to NUAA programs, downloadable templates, and support services
+- **PDF Export**: Download a beautifully formatted PDF report of your results
+- **Print & Share**: Print your results or share them on social media
+
+### Archetype Explorer
+
+- **Comparison Page**: Browse and compare all 12 storyteller archetypes
+- **Search & Filter**: Find archetypes by name, purpose, or keywords
+- **Detailed Views**: Deep dive into each archetype's characteristics
+- **Easy Navigation**: Move seamlessly between quiz and comparison views
 
 ### Educational Integration
 
@@ -65,11 +76,14 @@ This tool translates key concepts from NUAA's professional peer work training:
 
 ## 🔧 Technical Stack
 
-- **React 18** with TypeScript
-- **Vite** for fast development and building
-- **Tailwind CSS** for styling
+- **React 19** with TypeScript
+- **Vite 7** for fast development and building
+- **Tailwind CSS 3** for styling
 - **Lucide React** for icons
+- **jsPDF** for PDF generation
+- **localStorage** for quiz state persistence
 - Fully responsive and accessible design
+- No backend required - runs entirely in the browser
 
 ## Getting Started
 
@@ -159,9 +173,10 @@ This tool embodies NUAA's values:
 ```
 src/
 ├── components/
-│   ├── AODStorytellerQuiz.tsx       # Main quiz component
+│   ├── AODStorytellerQuiz.tsx       # Main quiz component with state management
 │   ├── IntroductionScreen.tsx       # Pre-quiz education
 │   ├── EnhancedResults.tsx          # Comprehensive results page
+│   ├── ArchetypeComparison.tsx      # Compare all 12 archetypes
 │   ├── BoundariesSection.tsx        # Traffic Light System
 │   ├── AudienceGuidance.tsx         # Audience adaptation tips
 │   ├── StoryTips.tsx                # Story crafting framework
@@ -171,7 +186,9 @@ src/
 │   ├── archetypeEnhancements.ts     # Extended archetype data
 │   ├── educationalContent.ts        # SHARE principles content
 │   └── resources.ts                 # NUAA links and resources
-└── App.tsx                           # Root component
+├── utils/
+│   └── pdfGenerator.ts              # PDF export functionality
+└── App.tsx                           # Root component with view routing
 ```
 
 ## 🚀 Deployment
